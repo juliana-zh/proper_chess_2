@@ -1,0 +1,226 @@
+.our-team {
+  background-color: $quaternaryColor;
+
+  @include big-display {
+    min-height: 1426px;
+  }
+
+  @include desktop {
+    min-height: 1426px;
+  }
+
+  @include tablets {
+    min-height: 1296px;
+  }
+
+  @include big-mobile {
+    min-height: 986px;
+  }
+
+  &__header {
+    @include regular-font(600);
+    font-size: 70px;
+    line-height: 0.9;
+    color: $secondaryColor;
+    margin: 0;
+
+    @include big-display {
+      padding: 80px 0 40px 160px;
+    }
+
+    @include desktop {
+      padding: 80px 0 40px 160px;
+    }
+
+    @include tablets {
+      padding: 50px 0 40px 50px;
+    }
+
+    @include big-mobile {
+      font-size: 40px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @include mobile {
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+
+  &__desc {
+    @include regular-font;
+    font-size: 20px;
+    line-height: 1.3;
+    color: $secondaryColor;
+
+    @include big-display {
+      padding: 0px 0 110px 160px;
+      width: 500px;
+    }
+
+    @include desktop {
+      padding: 0px 0 70px 160px;
+      width: 500px;
+    }
+
+    @include tablets {
+      padding: 0px 0 100px 50px;
+      width: 500px;
+    }
+
+    @include big-mobile {
+      font-size: 12px;
+      padding: 0 20px 20px 20px;
+      width: 280px;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      padding: 0 20px 60px 20px;
+      width: 280px;
+    }
+  }
+
+  &__stuff {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 80px;
+    list-style-type: none;
+    margin: 0 auto 140px 160px;
+    padding: 0;
+    color: $secondaryColor;
+    overflow: hidden;
+
+    @include tablets {
+      margin: 0 auto 80px 50px;
+      column-gap: 28px;
+    }
+
+    @include big-mobile {
+      display: none;
+    }
+  }
+
+  &__person-photo {
+    width: 320px;
+    height: 320px;
+  }
+
+  &__person-name {
+    margin: 30px auto 10px 0;
+    @include regular-font;
+  }
+
+  &__person-profession {
+    margin: 0;
+    @include regular-font;
+  }
+
+  &__want-to-team {
+    display: grid;
+    grid-template-areas:
+    'abstr text';
+    margin: 0 160px 60px 0;
+    column-gap: 100px;
+    overflow: hidden;
+
+    @include big-display {
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: 440px;
+    }
+
+    @include desktop {
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: 440px;
+    }
+
+    @include tablets {
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: 440px;
+      margin: 0 50px 50px 0;
+      column-gap: 60px;
+    }
+
+    @include big-mobile {
+      grid-template-areas:
+      'text'
+      'abstr';
+      column-gap: 0;
+      grid-template-columns: 1fr;
+      margin: 0 0 50px 0;
+      grid-template-rows: min-content;
+    }
+  }
+
+  &__our-team__text-wrapper {
+    grid-area: text;
+  }
+
+  &__want-to-team-header {
+    @include regular-font(600);
+    font-size: 70px;
+    line-height: 0.9;
+    color: $secondaryColor;
+    width: 520px;
+    margin: 111px 0 0 0;
+
+    @include big-mobile {
+      font-size: 40px;
+      line-height: 0.9;
+      width: 280px;
+      margin: 0 20px 20px 20px;
+    }
+  }
+
+  &__want-to-team-desc {
+    @include regular-font;
+    font-size: 20px;
+    line-height: 1.3;
+    color: $secondaryColor;
+    width: 520px;
+    margin: 40px 0 0 0;
+
+    @include big-mobile {
+      font-size: 12px;
+      line-height: 1.3;
+      width: 280px;
+      margin: 0 20px 60px 20px;
+    }
+  }
+
+  &__want-to-team-pic {
+    grid-area: abstr;
+    background-image: url(../../../images/abstract_green.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include big-display {
+      width: 660px;
+      height: 440px;
+    }
+
+    @include desktop {
+      width: 100%;
+      align-self: left;
+    }
+
+    @include tablets {
+      width: 180px;
+      height: 360px;
+      background-position: right;
+      align-self: center;
+    }
+
+    @include big-mobile {
+      width: 280px;
+      height: 140px;
+      background-position: top;
+      margin: 0 20px 0 20px;
+      background-size: 420px;
+      background-position: top right;
+    }
+  }
+
+}

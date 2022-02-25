@@ -1,0 +1,207 @@
+.proper-chess {
+  background-color: $primaryColor;
+  min-height: 870px;
+
+  @include big-display {
+    min-height: 870px;
+  }
+
+  @include desktop {
+    min-height: 870px;
+  }
+
+  @include tablets {
+    min-height: 870px;
+  }
+
+  @include big-mobile {
+    min-height: 542px;
+  }
+
+  @include mobile {
+    min-height: 542px;
+  }
+
+  &__club {
+    grid-area: club;
+    background-image: url(../../../images/rectangle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 70px 0;
+
+    @include big-display {
+      width: 84px;
+      height: 50px;
+    }
+
+    @include desktop {
+      width: 84px;
+      height: 50px;
+    }
+
+    @include tablets {
+      width: 84px;
+      height: 50px;
+    }
+
+    @include big-mobile {
+      width: 63px;
+      height: 40px;
+      margin: 25px 0 50px 0;
+    }
+  }
+
+  &__club-text {
+    @include regular-font;
+    color: $secondaryColor;
+
+
+    @include big-display {
+      font-size: 16px;
+      line-height: 0.9;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 0.9;
+    }
+
+    @include tablets {
+      font-size: 16px;
+      line-height: 0.9;
+    }
+
+    @include big-mobile {
+      font-size: 12px;
+      line-height: 0.9;
+    }
+  }
+
+  &__main-header-text {
+    grid-area: main-header;
+    color: $secondaryColor;
+    @include regular-font(600);
+    font-size: 70px;
+    line-height: 0.9;
+    margin: 0 0 40px 0;
+    width: 500px;
+
+    @include big-mobile {
+      font-size: 40px;
+      line-height: 0.9;
+      width: 280px;
+      margin: 11px 0 20px 0;
+    }
+  }
+
+  &__desc {
+    grid-area: description;
+    color: $secondaryColor;
+    @include regular-font;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 0 182px 0;
+    width: 500px;
+
+    @include tablets {
+      margin: 0 0 212px 0;
+    }
+
+    @include big-mobile {
+      font-size: 12px;
+      line-height: 1.3;
+      width: 280px;
+      margin: 0 0 110px 0;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-areas:
+      'club abstract'
+      'main-header abstract'
+      'description abstract'
+      'chess abstract';
+
+    @include big-display {
+      margin: 32px 0 80px 160px;
+      grid-template-rows: min-content;
+      grid-template-columns: 2fr 1.2fr;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      margin: 32px 0 80px 160px;
+      grid-template-rows: min-content;
+      grid-template-columns: 2fr 1.2fr;
+      justify-content: space-between;
+    }
+
+    @include tablets {
+      margin: 36px 0 50px 50px;
+      grid-template-rows: min-content;
+      grid-template-columns: 2fr 0.4fr;
+      justify-content: space-between;
+    }
+
+    @include big-mobile {
+      grid-template-areas:
+      'club abstract'
+      'main-header main-header'
+      'description description'
+      'chess chess';
+
+      grid-template-rows: min-content;
+      grid-template-columns: 2fr;
+      margin: 12px 20px 20px 20px;
+    }
+
+  }
+
+  &__table-pic {
+    grid-area: chess;
+    background-image: url(../../../images/table.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 416px;
+    height: 104px;
+    align-self: flex-end;
+
+    @include big-mobile {
+      width: 280px;
+      height: 70px;
+    }
+  }
+
+  &__abstr-pic {
+    grid-area: abstract;
+    background-image: url(../../../images/abstract_pic_main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include big-display {
+      width: 100%;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+
+    @include tablets {
+      width: 100%;
+      height: 520px;
+      align-self: flex-end;
+    }
+
+    @include big-mobile {
+      width: 120px;
+      height: 60px;
+      align-self: flex-start;
+      background-image: url(../../../images/small_abstr.png);
+    }
+  }
+}
+

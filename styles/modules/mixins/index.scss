@@ -1,0 +1,41 @@
+@mixin big-display {
+  @media screen and (max-width: $big-display) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin big-mobile {
+  @media screen and (max-width: $big-mobile) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin regular-font ($weight: 400) {
+  font-family: $regularFont;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin reg-button {
+  background: $tertiaryColor;
+  border-radius: 8px;
+  border: none;
+}
