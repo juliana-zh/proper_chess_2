@@ -4,18 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (max-width: 3840px) {
-  .header {
-    min-height: 108px;
-    padding: 0px 160px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .header {
-    min-height: 108px;
-    padding: 0px 160px;
-  }
+  min-height: 108px;
+  padding: 0px 160px;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -29,17 +19,9 @@
     padding: 0px 20px;
   }
 }
-@media screen and (max-width: 3840px) {
-  .header__figure {
-    width: 38px;
-    height: 54px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .header__figure {
-    width: 38px;
-    height: 54px;
-  }
+.header__figure {
+  width: 38px;
+  height: 54px;
 }
 @media screen and (max-width: 768px) {
   .header__figure {
@@ -53,17 +35,9 @@
     height: 36px;
   }
 }
-@media screen and (max-width: 3840px) {
-  .header__inv-to-club-arrow {
-    width: 10px;
-    height: 13px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .header__inv-to-club-arrow {
-    width: 10px;
-    height: 13px;
-  }
+.header__inv-to-club-arrow {
+  width: 10px;
+  height: 13px;
 }
 @media screen and (max-width: 768px) {
   .header__inv-to-club-arrow {
@@ -81,18 +55,8 @@
   grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
   align-items: center;
-}
-@media screen and (max-width: 3840px) {
-  .header__invitations {
-    -moz-column-gap: 50px;
-         column-gap: 50px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .header__invitations {
-    -moz-column-gap: 50px;
-         column-gap: 50px;
-  }
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 @media screen and (max-width: 768px) {
   .header__invitations {
@@ -107,22 +71,12 @@
   }
 }
 .header__inv-to-club-text {
-  color: black;
+  color: #ffffff;
   font-family: "NotoSans", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-@media screen and (max-width: 3840px) {
-  .header__inv-to-club-text {
-    font-size: 15px;
-    line-height: 1.1;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .header__inv-to-club-text {
-    font-size: 15px;
-    line-height: 1.1;
-  }
+  font-size: 15px;
+  line-height: 1.1;
 }
 @media screen and (max-width: 768px) {
   .header__inv-to-club-text {
@@ -185,26 +139,13 @@
 
 .page {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .proper-chess {
   background-color: black;
-  min-height: 870px;
-}
-@media screen and (max-width: 3840px) {
-  .proper-chess {
-    min-height: 870px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .proper-chess {
-    min-height: 870px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .proper-chess {
-    min-height: 870px;
-  }
+  min-height: 730px;
 }
 @media screen and (max-width: 596px) {
   .proper-chess {
@@ -213,30 +154,20 @@
 }
 @media screen and (max-width: 320px) {
   .proper-chess {
-    min-height: 542px;
+    min-height: 465px;
   }
 }
 .proper-chess__club {
   grid-area: club;
-  background-image: url(../../../images/rectangle.png);
+  background-image: url(../images/rectangle.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 70px 0;
-}
-@media screen and (max-width: 3840px) {
-  .proper-chess__club {
-    width: 84px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .proper-chess__club {
-    width: 84px;
-    height: 50px;
-  }
+  width: 84px;
+  height: 50px;
 }
 @media screen and (max-width: 768px) {
   .proper-chess__club {
@@ -256,18 +187,8 @@
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-}
-@media screen and (max-width: 3840px) {
-  .proper-chess__club-text {
-    font-size: 16px;
-    line-height: 0.9;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .proper-chess__club-text {
-    font-size: 16px;
-    line-height: 0.9;
-  }
+  font-size: 16px;
+  line-height: 0.9;
 }
 @media screen and (max-width: 768px) {
   .proper-chess__club-text {
@@ -327,24 +248,11 @@
 .proper-chess__wrapper {
   display: grid;
   grid-template-areas: "club abstract" "main-header abstract" "description abstract" "chess abstract";
-}
-@media screen and (max-width: 3840px) {
-  .proper-chess__wrapper {
-    margin: 32px 0 80px 160px;
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
-    grid-template-columns: 2fr 1.2fr;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .proper-chess__wrapper {
-    margin: 32px 0 80px 160px;
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
-    grid-template-columns: 2fr 1.2fr;
-    justify-content: space-between;
-  }
+  margin: 32px 0 80px 160px;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+  grid-template-columns: 2fr 1.2fr;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .proper-chess__wrapper {
@@ -366,7 +274,7 @@
 }
 .proper-chess__table-pic {
   grid-area: chess;
-  background-image: url(../../../images/table.png);
+  background-image: url(../images/table.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 416px;
@@ -381,19 +289,10 @@
 }
 .proper-chess__abstr-pic {
   grid-area: abstract;
-  background-image: url(../../../images/abstract_pic_main.png);
+  background-image: url(../images/abstract_pic_main.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media screen and (max-width: 3840px) {
-  .proper-chess__abstr-pic {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .proper-chess__abstr-pic {
-    width: 100%;
-  }
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .proper-chess__abstr-pic {
@@ -407,22 +306,13 @@
     width: 120px;
     height: 60px;
     align-self: flex-start;
-    background-image: url(../../../images/small_abstr.png);
+    background-image: url(../images/small_abstr.png);
   }
 }
 
 .our-team {
   background-color: #5036E6;
-}
-@media screen and (max-width: 3840px) {
-  .our-team {
-    min-height: 1426px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .our-team {
-    min-height: 1426px;
-  }
+  min-height: 1426px;
 }
 @media screen and (max-width: 768px) {
   .our-team {
@@ -442,16 +332,7 @@
   line-height: 0.9;
   color: #ffffff;
   margin: 0;
-}
-@media screen and (max-width: 3840px) {
-  .our-team__header {
-    padding: 80px 0 40px 160px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .our-team__header {
-    padding: 80px 0 40px 160px;
-  }
+  padding: 80px 0 40px 160px;
 }
 @media screen and (max-width: 768px) {
   .our-team__header {
@@ -478,18 +359,8 @@
   font-size: 20px;
   line-height: 1.3;
   color: #ffffff;
-}
-@media screen and (max-width: 3840px) {
-  .our-team__desc {
-    padding: 0px 0 110px 160px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .our-team__desc {
-    padding: 0px 0 70px 160px;
-    width: 500px;
-  }
+  padding: 0px 0 70px 160px;
+  width: 500px;
 }
 @media screen and (max-width: 768px) {
   .our-team__desc {
@@ -559,18 +430,8 @@
   -moz-column-gap: 100px;
        column-gap: 100px;
   overflow: hidden;
-}
-@media screen and (max-width: 3840px) {
-  .our-team__want-to-team {
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 440px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .our-team__want-to-team {
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 440px;
-  }
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 440px;
 }
 @media screen and (max-width: 768px) {
   .our-team__want-to-team {
@@ -633,21 +494,10 @@
 }
 .our-team__want-to-team-pic {
   grid-area: abstr;
-  background-image: url(../../../images/abstract_green.png);
+  background-image: url(../images/abstract_green.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media screen and (max-width: 3840px) {
-  .our-team__want-to-team-pic {
-    width: 660px;
-    height: 440px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .our-team__want-to-team-pic {
-    width: 100%;
-    align-self: left;
-  }
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .our-team__want-to-team-pic {
@@ -670,16 +520,7 @@
 
 .battles {
   background-color: black;
-}
-@media screen and (max-width: 3840px) {
-  .battles {
-    min-height: 985px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .battles {
-    min-height: 985px;
-  }
+  min-height: 985px;
 }
 @media screen and (max-width: 768px) {
   .battles {
@@ -699,16 +540,7 @@
   line-height: 0.9;
   color: #ffffff;
   margin: 0;
-}
-@media screen and (max-width: 3840px) {
-  .battles__header {
-    padding: 80px 0 40px 160px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .battles__header {
-    padding: 80px 0 40px 160px;
-  }
+  padding: 80px 0 40px 160px;
 }
 @media screen and (max-width: 768px) {
   .battles__header {
@@ -737,18 +569,8 @@
   line-height: 1.3;
   color: #ffffff;
   margin: 0;
-}
-@media screen and (max-width: 3840px) {
-  .battles__desc {
-    padding: 0px 0 110px 160px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .battles__desc {
-    padding: 0px 0 110px 160px;
-    width: 500px;
-  }
+  padding: 0px 0 110px 160px;
+  width: 500px;
 }
 @media screen and (max-width: 768px) {
   .battles__desc {
@@ -825,7 +647,7 @@
   }
 }
 .battles__circle {
-  background-image: url(../../../images/half-circle.png);
+  background-image: url(../images/half-circle.png);
   width: 440px;
   height: 220px;
 }
@@ -842,7 +664,7 @@
   }
 }
 .battles__chess {
-  background-image: url(../../../images/table_green.png);
+  background-image: url(../images/table_green.png);
   width: 416px;
   height: 104px;
   align-self: center;
@@ -989,12 +811,12 @@
   width: 44px;
 }
 .slider__point {
-  background-image: url(../../../images/empty_point.png);
+  background-image: url(../images/empty_point.png);
   width: 8px;
   height: 8px;
 }
 .slider__point_status_active {
-  background-image: url(../../../images/active_point.png);
+  background-image: url(../images/active_point.png);
 }
 
 .popup {
@@ -1017,18 +839,8 @@
 .form {
   position: fixed;
   z-index: 2;
-}
-@media screen and (max-width: 3840px) {
-  .form {
-    top: calc(50% - 300px);
-    left: calc(50% - 254px);
-  }
-}
-@media screen and (max-width: 1440px) {
-  .form {
-    top: calc(50% - 278px);
-    left: calc(50% - 252px);
-  }
+  top: calc(50% - 278px);
+  left: calc(50% - 252px);
 }
 @media screen and (max-width: 768px) {
   .form {
@@ -1074,11 +886,7 @@
   margin: 78px auto 232px auto;
   border: none;
   padding: 0;
-}
-@media screen and (max-width: 1440px) {
-  .form__input-container {
-    margin: 78px auto 232px auto;
-  }
+  margin: 78px auto 232px auto;
 }
 @media screen and (max-width: 768px) {
   .form__input-container {
@@ -1169,4 +977,8 @@
 }
 .form__register-button:hover {
   background-color: #066C4C;
+}
+
+.page-wrapper {
+  background-color: black;
 }/*# sourceMappingURL=styles.css.map */

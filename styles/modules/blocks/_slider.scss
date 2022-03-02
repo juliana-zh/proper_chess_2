@@ -10,6 +10,7 @@
     width: 280px;
     height: 280px;
     display: block;
+
   }
 
   &__person-name {
@@ -39,13 +40,13 @@
   }
 
   &__point {
-    background-image: url(../../../images/empty_point.png);
+    background-image: url(../images/empty_point.png);
     width: 8px;
     height: 8px;
   }
 
   &__point_status_active {
-    background-image: url(../../../images/active_point.png);
+    background-image: url(../images/active_point.png);
   }
 
 }

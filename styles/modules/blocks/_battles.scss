@@ -1,13 +1,6 @@
 .battles {
   background-color: $primaryColor;
-
-  @include big-display {
-    min-height: 985px;
-  }
-
-  @include desktop {
-    min-height: 985px;
-  }
+  min-height: 985px;
 
   @include tablets {
     min-height: 1015px;
@@ -23,14 +16,7 @@
     line-height: 0.9;
     color: $secondaryColor;
     margin: 0;
-
-    @include big-display {
-      padding: 80px 0 40px 160px;
-    }
-
-    @include desktop {
-      padding: 80px 0 40px 160px;
-    }
+    padding: 80px 0 40px 160px;
 
     @include tablets {
       padding: 50px 0 40px 50px;
@@ -56,15 +42,8 @@
     color: $secondaryColor;
     margin: 0;
 
-    @include big-display {
-      padding: 0px 0 110px 160px;
-      width: 500px;
-    }
-
-    @include desktop {
-      padding: 0px 0 110px 160px;
-      width: 500px;
-    }
+    padding: 0px 0 110px 160px;
+    width: 500px;
 
     @include tablets {
       padding: 0px 0 140px 50px;
@@ -130,7 +109,7 @@
   }
 
   &__circle {
-    background-image: url(../../../images/half-circle.png);
+    background-image: url(../images/half-circle.png);
     width: 440px;
     height: 220px;
 
@@ -146,7 +125,7 @@
   }
 
   &__chess {
-    background-image: url(../../../images/table_green.png);
+    background-image: url(../images/table_green.png);
     width: 416px;
     height: 104px;
     align-self: center;

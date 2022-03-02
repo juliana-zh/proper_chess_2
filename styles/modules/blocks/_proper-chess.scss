@@ -1,46 +1,26 @@
 .proper-chess {
   background-color: $primaryColor;
-  min-height: 870px;
-
-  @include big-display {
-    min-height: 870px;
-  }
-
-  @include desktop {
-    min-height: 870px;
-  }
-
-  @include tablets {
-    min-height: 870px;
-  }
+  min-height: 730px;
 
   @include big-mobile {
     min-height: 542px;
   }
 
   @include mobile {
-    min-height: 542px;
+    min-height: 465px;
   }
 
   &__club {
     grid-area: club;
-    background-image: url(../../../images/rectangle.png);
+    background-image: url(../images/rectangle.png);
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0 70px 0;
-
-    @include big-display {
-      width: 84px;
-      height: 50px;
-    }
-
-    @include desktop {
-      width: 84px;
-      height: 50px;
-    }
+    width: 84px;
+    height: 50px;
 
     @include tablets {
       width: 84px;
@@ -57,17 +37,8 @@
   &__club-text {
     @include regular-font;
     color: $secondaryColor;
-
-
-    @include big-display {
-      font-size: 16px;
-      line-height: 0.9;
-    }
-
-    @include desktop {
-      font-size: 16px;
-      line-height: 0.9;
-    }
+    font-size: 16px;
+    line-height: 0.9;
 
     @include tablets {
       font-size: 16px;
@@ -126,19 +97,10 @@
       'description abstract'
       'chess abstract';
 
-    @include big-display {
-      margin: 32px 0 80px 160px;
-      grid-template-rows: min-content;
-      grid-template-columns: 2fr 1.2fr;
-      justify-content: space-between;
-    }
-
-    @include desktop {
-      margin: 32px 0 80px 160px;
-      grid-template-rows: min-content;
-      grid-template-columns: 2fr 1.2fr;
-      justify-content: space-between;
-    }
+    margin: 32px 0 80px 160px;
+    grid-template-rows: min-content;
+    grid-template-columns: 2fr 1.2fr;
+    justify-content: space-between;
 
     @include tablets {
       margin: 36px 0 50px 50px;
@@ -163,7 +125,7 @@
 
   &__table-pic {
     grid-area: chess;
-    background-image: url(../../../images/table.png);
+    background-image: url(../images/table.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 416px;
@@ -178,17 +140,10 @@
 
   &__abstr-pic {
     grid-area: abstract;
-    background-image: url(../../../images/abstract_pic_main.png);
+    background-image: url(../images/abstract_pic_main.png);
     background-size: cover;
     background-repeat: no-repeat;
-
-    @include big-display {
-      width: 100%;
-    }
-
-    @include desktop {
-      width: 100%;
-    }
+    width: 100%;
 
     @include tablets {
       width: 100%;
@@ -200,7 +155,7 @@
       width: 120px;
       height: 60px;
       align-self: flex-start;
-      background-image: url(../../../images/small_abstr.png);
+      background-image: url(../images/small_abstr.png);
     }
   }
 }

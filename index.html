@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Шахматный клуб</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body class="page">
-  <div class="proper-chess">
-    <div class="header">
+<body class="page-wrapper">
+  <div class="page">
+    <header class="header">
       <img src="./images/figure.svg" alt="Шахматная фигура" class="header__figure">
       <div class="header__invitations">
         <div class="header__inv-to-club">
@@ -20,112 +20,117 @@
         </div>
         <button class="header__register-button" name="button">Зарегистрироваться</button>
       </div>
-    </div>
-    <div class="proper-chess__wrapper">
-      <div class="proper-chess__club">
-        <div class="proper-chess__club-text">КЛУБ</div>
+    </header>
+    <main class="main">
+      <div class="proper-chess">
+        <div class="proper-chess__wrapper">
+          <div class="proper-chess__club">
+            <div class="proper-chess__club-text">КЛУБ</div>
+          </div>
+          <h1 class="proper-chess__main-header-text">Правильные шахматы</h1>
+          <p class="proper-chess__desc">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц
+            состязании
+            и бою с гройсмейстером. </p>
+          <div class="proper-chess__table-pic"></div>
+          <div class="proper-chess__abstr-pic"></div>
+        </div>
       </div>
-      <h1 class="proper-chess__main-header-text">Правильные шахматы</h1>
-      <p class="proper-chess__desc">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц состязании
-        и бою с гройсмейстером. </p>
-      <div class="proper-chess__table-pic"></div>
-      <div class="proper-chess__abstr-pic"></div>
-    </div>
-  </div>
-  <div class="our-team">
-    <h2 class="our-team__header">
-      Наша команда
-    </h2>
-    <p class="our-team__desc">
-      Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!
-    </p>
-    <ul class="our-team__stuff">
-      <li class="our-team__person">
-        <img src="./images/andre.png" alt="Фотография Андрея" class="our-team__person-photo">
-        <p class="our-team__person-name">АНДРЕЙ</p>
-        <p class="our-team__person-profession">Шахматист, писатель.</p>
-      </li>
-      <li class="our-team__person">
-        <img src="./images/nikita.png" alt="Фотография Никиты" class="our-team__person-photo">
-        <p class="our-team__person-name">НИКИТА</p>
-        <p class="our-team__person-profession">Шахматист, кулинар.</p>
-      </li>
-      <li class="our-team__person">
-        <img src="./images/alex.png" alt="Фотография Алексея" class="our-team__person-photo">
-        <p class="our-team__person-name">АЛЕКСЕЙ</p>
-        <p class="our-team__person-profession">Шахматист, геймер.</p>
-      </li>
-    </ul>
-    <div class="slider">
-      <img src="./images/andre.png" alt="Фотография Андрея" class="slider__picture">
-      <p class="slider__person-name">АНДРЕЙ</p>
-      <p class="slider__person-profession">Шахматист, писатель.</p>
-      <div class="slider__block-points">
-        <div class="slider__point slider__point_status_active"></div>
-        <div class="slider__point"></div>
-        <div class="slider__point"></div>
-      </div>
-    </div>
-    <div class="our-team__want-to-team">
-      <div class="our-team__text-wrapper">
-        <h2 class="our-team__want-to-team-header">
-          Хочешь в команду?
+      <div class="our-team">
+        <h2 class="our-team__header">
+          Наша команда
         </h2>
-        <p class="our-team__want-to-team-desc">
-          Свяжись с нами и мы обсудим все детали присоеденения к команде.
+        <p class="our-team__desc">
+          Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!
         </p>
+        <ul class="our-team__stuff">
+          <li class="our-team__person">
+            <img src="./images/andre.png" alt="Фотография Андрея" class="our-team__person-photo">
+            <p class="our-team__person-name">АНДРЕЙ</p>
+            <p class="our-team__person-profession">Шахматист, писатель.</p>
+          </li>
+          <li class="our-team__person">
+            <img src="./images/nikita.png" alt="Фотография Никиты" class="our-team__person-photo">
+            <p class="our-team__person-name">НИКИТА</p>
+            <p class="our-team__person-profession">Шахматист, кулинар.</p>
+          </li>
+          <li class="our-team__person">
+            <img src="./images/alex.png" alt="Фотография Алексея" class="our-team__person-photo">
+            <p class="our-team__person-name">АЛЕКСЕЙ</p>
+            <p class="our-team__person-profession">Шахматист, геймер.</p>
+          </li>
+        </ul>
+        <div class="slider">
+          <img src="./images/andre.png" alt="Фотография Андрея" class="slider__picture">
+          <p class="slider__person-name">АНДРЕЙ</p>
+          <p class="slider__person-profession">Шахматист, писатель.</p>
+          <div class="slider__block-points">
+            <div class="slider__point slider__point_status_active"></div>
+            <div class="slider__point"></div>
+            <div class="slider__point"></div>
+          </div>
+        </div>
+        <div class="our-team__want-to-team">
+          <div class="our-team__text-wrapper">
+            <h2 class="our-team__want-to-team-header">
+              Хочешь в команду?
+            </h2>
+            <p class="our-team__want-to-team-desc">
+              Свяжись с нами и мы обсудим все детали присоеденения к команде.
+            </p>
+          </div>
+          <div class="our-team__want-to-team-pic"></div>
+        </div>
       </div>
-      <div class="our-team__want-to-team-pic"></div>
-    </div>
-  </div>
-  <div class="battles">
-    <h2 class="battles__header">
-      Сражения
-    </h2>
-    <p class="battles__desc">
-      Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте
-      с нашими шахматистами.
-    </p>
-    <ul class="battles__items">
-      <li class="battles__item">
-        <img src="./images/b1.png" alt="Игроки за шахматной доской" class="battles__item-photo">
-      </li>
-      <li class="battles__item">
-        <img src="./images/b2.png" alt="Шахматная доска вблизи" class="battles__item-photo">
-      </li>
-      <li class="battles__item">
-        <img src="./images/b3.png" alt="Игроки нажимают на шахматные часы" class="battles__item-photo">
-      </li>
-    </ul>
-    <div class="slider">
-      <img src="./images/b1.png" alt="Игроки за шахматной доской" class="slider__picture">
-      <div class="slider__block-points">
-        <div class="slider__point slider__point_status_active"></div>
-        <div class="slider__point"></div>
-        <div class="slider__point"></div>
+      <div class="battles">
+        <h2 class="battles__header">
+          Сражения
+        </h2>
+        <p class="battles__desc">
+          Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте
+          с нашими шахматистами.
+        </p>
+        <ul class="battles__items">
+          <li class="battles__item">
+            <img src="./images/b1.png" alt="Игроки за шахматной доской" class="battles__item-photo">
+          </li>
+          <li class="battles__item">
+            <img src="./images/b2.png" alt="Шахматная доска вблизи" class="battles__item-photo">
+          </li>
+          <li class="battles__item">
+            <img src="./images/b3.png" alt="Игроки нажимают на шахматные часы" class="battles__item-photo">
+          </li>
+        </ul>
+        <div class="slider">
+          <img src="./images/b1.png" alt="Игроки за шахматной доской" class="slider__picture">
+          <div class="slider__block-points">
+            <div class="slider__point slider__point_status_active"></div>
+            <div class="slider__point"></div>
+            <div class="slider__point"></div>
+          </div>
+        </div>
+        <div class="battles__figures">
+          <div class="battles__circle"></div>
+          <div class="battles__chess"></div>
+        </div>
       </div>
+    </main>
+    <footer class="footer">
+      <img src="./images/figure.svg" alt="Шахматная фигурка" class="footer__chess-figure">
+      <button class="footer__register-button" name="button">Зарегистрироваться</button>
+      <p class="footer__capture">Шахматный клуб в Москве.</p>
+      <p class="footer__copyright">© Chees Club.</p>
+    </footer>
+    <div class="popup">
+      <form class="form" name="register_profile">
+        <img src="./images/figure.svg" alt="Шахматная фигурка" class="form__chess-figure">
+        <h2 class="form__header">Регистрация</h2>
+        <fieldset class="form__input-container">
+          <input type="text" class="form__item form__item_el_name" name="name" placeholder="Имя">
+          <input type="text" class="form__item form__item_el_email" name="email" placeholder="Email">
+        </fieldset>
+        <button class="form__register-button" type="submit" name="button">Зарегистрироваться</button>
+      </form>
     </div>
-    <div class="battles__figures">
-      <div class="battles__circle"></div>
-      <div class="battles__chess"></div>
-    </div>
-  </div>
-  <div class="footer">
-    <img src="./images/figure.svg" alt="Шахматная фигурка" class="footer__chess-figure">
-    <button class="footer__register-button" name="button">Зарегистрироваться</button>
-    <p class="footer__capture">Шахматный клуб в Москве.</p>
-    <p class="footer__copyright">© Chees Club.</p>
-  </div>
-  <div class="popup">
-    <form class="form" name="register_profile">
-      <img src="./images/figure.svg" alt="Шахматная фигурка" class="form__chess-figure">
-      <h2 class="form__header">Регистрация</h2>
-      <fieldset class="form__input-container">
-        <input type="text" class="form__item form__item_el_name" name="name" placeholder="Имя">
-        <input type="text" class="form__item form__item_el_email" name="email" placeholder="Email">
-      </fieldset>
-      <button class="form__register-button" type="submit" name="button">Зарегистрироваться</button>
-    </form>
   </div>
   <script src="script.js"></script>
 </body>

@@ -2,15 +2,8 @@
   position: fixed;
   z-index: 2;
 
-  @include big-display {
-    top: calc(50% - 300px);
-    left: calc(50% - 254px);
-  }
-
-  @include desktop {
-    top: calc(50% - 278px);
-    left: calc(50% - 252px);
-  }
+  top: calc(50% - 278px);
+  left: calc(50% - 252px);
 
   @include tablets {
     top: calc(50% - 198px);
@@ -52,10 +45,7 @@
       margin: 78px auto 232px auto;
       border: none;
       padding: 0;
-
-      @include desktop {
-        margin: 78px auto 232px auto;
-      }
+      margin: 78px auto 232px auto;
 
       @include tablets {
         margin: 78px auto 223px auto;
